@@ -14,7 +14,7 @@ import Home from './pages/Home';
 import NavBar from './components/Navbar';
 import PropInfo from './pages/PropInfo';
 // import LoginUi from './pages/LoginUi';
-import Myprofile from './pages/profile';
+// import Myprofile from './pages/oldprofile';
 import Anyprofile from './pages/anyuser';
 import Register from './pages/Register';
 import UserInfo from './pages/UserInfo';
@@ -23,6 +23,7 @@ import UpdateUser from './pages/updateUser/UpdateUser';
 import Addprop from './pages/Addproperty';
 import About from './pages/About';
 import './resources/style/ComponentStyle.css'
+import UserPosts from './pages/userPosts/UserPosts'
 
 import home from './pages/Home1';
 import SingleRoom from './pages/SingleRoom'
@@ -60,6 +61,7 @@ export default function App() {
         <Route path={"/aboutus"} exact component={About}></Route>
         <Route path={"/propInfo"} exact component={PropInfo}></Route>
         <Route path={"/singleroom"} exact component={SingleRoom}></Route>
+        {/* <Route path={"/userpost"} exact component={UserPosts}></Route> */}
         <Route path={"/chat"} exact component={Layout}></Route>
 
         { userstate && (
@@ -81,7 +83,7 @@ export default function App() {
     
 
         { userstate && (
-        <Route path={"/profile"} exact component={Myprofile}></Route>
+        <Route path={"/userpost"} exact component={UserPosts}></Route>
         )}
 
 

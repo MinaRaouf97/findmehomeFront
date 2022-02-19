@@ -127,8 +127,8 @@ const Navbar = () => {
               { userstate ? 
 
               <li className="nav-item">
-                <Link className="nav-link" to="/profile">
-                  Profile
+                <Link className="nav-link" to="/userpost">
+                  User Posts
                 </Link>
               </li>
               :null }
