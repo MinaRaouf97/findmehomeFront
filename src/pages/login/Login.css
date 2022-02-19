@@ -1,0 +1,12 @@
+.icon-img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 2rem;
+}
+
+.loginBtn{
+    background-color:#823afe;
+}
+.form-control:focus{
+    border-color: #823afe;
+}
