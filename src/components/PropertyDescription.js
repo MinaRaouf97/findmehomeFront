@@ -1,21 +1,21 @@
 import React from 'react';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import { Col,FormControl } from 'react-bootstrap';
+import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn } from 'mdb-react-ui-kit';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 
 
 export default function Description() {
     return (
+        <Box sx={{ flexGrow: 1 }}>
+
+            <Grid container spacing={3}>
+                <Grid item xs={6}>
 
 
-        <div className="container">
-            <div className="row">
-
-                <Col sm={12} xs={12} md={8} >
-
-
-                    <div id='Description' >
+                    <div id='Description' style={{ display: 'block', width: '900px', padding: 25 }}>
                         <h4>Home Description</h4>
                         <Tabs defaultActiveKey="warning">
                             <Tab eventKey="first" title="Home Overview" style={{ backgroundColor: '#f8f8ff' }}>
@@ -41,55 +41,38 @@ export default function Description() {
                                     <li>Garden View</li>
                                 </dl>
                             </Tab>
+
+
                         </Tabs>
                     </div>
-                </Col>
+
+                </Grid>
+                {/* <Grid item xs={3}>
+                    <div> </div>
+                </Grid> */}
+                <Grid item xs={3}>
 
 
-                <Col sm={6} xs={6} md={4}>
+                    <div className='MessageForm'>
 
-                    <div className="card "  style={{ width: "15rem",height:'20rem' ,margin:'10%',textAlign:'center' }}>
-                        <img className="card-img-top" src="https://eclatsuperior.com/wp-content/uploads/2021/04/man3.jpg" alt="" />
-                        <div className="card-body">
-                            <h5 className="card-title">Contact With Seller</h5>
-                            <p className="card-text"><FormControl as="textarea"  /></p>
-                            <a href="#" className="btn btn-primary  " >Submit</a>
-                        </div>
+                        <MDBCard  >
+                            <MDBCardImage
+                                src='https://eclatsuperior.com/wp-content/uploads/2021/04/man3.jpg' position='top' className='rounded' alt='...' />
+                            <MDBCardBody>
+
+                                <MDBCardTitle>John Smith</MDBCardTitle>
+                                <MDBCardText>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                                </MDBCardText>
+                                <MDBBtn href='#'>Send Message</MDBBtn>
+                            </MDBCardBody>
+                        </MDBCard>
                     </div>
 
-                </Col>
-
-            </div>
+                </Grid>
 
 
-
-
-
-
-
-        </div >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </Grid>
+        </Box>
     );
 }
-
-
-
-
-
-

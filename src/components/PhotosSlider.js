@@ -12,10 +12,6 @@ export default function PhotosSlider() {
             // caption: "Kitchen"
         },
         {
-            image: "https://d2yht872mhrlra.cloudfront.net/property/117896/property_yKzKB57HMh6uiezgSnpvbI98kY2SCo_e.png",
-            // caption: "Dressing Room"
-        },
-        {
             image: "https://d2yht872mhrlra.cloudfront.net/property/117896/property_xXR1co_N6phJt9ezMkv5q7HkpWjeYwmu.png",
             // caption: "Bedroom"
         },
@@ -41,7 +37,7 @@ export default function PhotosSlider() {
                 <div style={{ padding: "0 20px" }}>
                     <Carousel
                         data={data}
-                        // time={2000}
+                        time={10000}
                         width="1500px"
                         height="500px"
                         captionStyle={captionStyle}

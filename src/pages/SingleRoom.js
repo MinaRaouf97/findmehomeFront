@@ -4,7 +4,6 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import PhotosSlider from "../components/singleroom/PhotosSlider";
 import Map from "../components/Maps";
-import PropertyInfoIcons from "../components/singleroom/PropertyInfo";
 import PropertyDescription from "../components/singleroom/PropertyDescription";
 // import Reviews from "../components/Reviews";
 
@@ -20,7 +19,6 @@ const SingleRoom = () => {
         </Banner>
       </Hero>
       <PhotosSlider />
-      <PropertyInfoIcons />
       <PropertyDescription/>
 
       <Map />
