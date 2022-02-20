@@ -7,12 +7,15 @@ export default function SearchHome() {
 
 
       <section className="HomeSearch" id="HomeSearch">
+
         <form action="">
+
           <div className="inputBox" >
+            <h4 className="container-fluid" > Advanced Search</h4>
 
 
             <select className="form-select" >
-              <option value="" disabled hidden selected>Maximum price</option>
+              <option value="" disabled hidden selected >Maximum price</option>
               <option value="5000">5000 LE</option>
               <option value="10000">10000 LE</option>
               <option value="20000">20000 LE</option>
@@ -48,7 +51,7 @@ export default function SearchHome() {
               <option value="security">security</option>
             </select>
           </div>
-          <input type="submit" value="search property" className="btn" />
+          <input type="submit" value="search" className="btn" />
         </form>
       </section>
 

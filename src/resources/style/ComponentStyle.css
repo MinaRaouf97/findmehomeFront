@@ -168,6 +168,15 @@
   margin-left:30% !important;
 }
 
+.inputBox h4{
+  color: var(--primaryColor);
+  margin-bottom: 0%;
+  font-weight: bolder;
+  font-size: 140%;
+  text-align: center;
+  width:fit-content;
+}
+
 .HomeSearch option, .HomeSearch select {
   border-radius: 1rem;
 }
@@ -183,7 +192,7 @@
 .HomeSearch form .inputBox input,
 .HomeSearch form .inputBox select {
   flex: 1 1 25rem;
-  /* border: 0.1rem solid #333; */
+  border: .1rem solid var(--primaryColor);
   font-size: 110%;
   padding: 2%;
 }
@@ -192,7 +201,7 @@
   width: 70%;
   margin: 2% 17% ;
   border-radius: 5rem;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: white;
   background: var(--primaryColor);
   cursor: pointer;
@@ -419,8 +428,8 @@ Button.apt-btn:hover{
   
   .carousel .control-dots .dot {
     box-shadow: none !important;
-    background: #454545 !important;
-    outline: 0;
+    background:#4f249f !important;
+    /* outline: 2; */
   }
   
   .carousel.carousel-slider .control-arrow {
