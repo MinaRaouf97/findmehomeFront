@@ -24,7 +24,7 @@ import Addprop from './pages/Addproperty';
 import About from './pages/About';
 import './resources/style/ComponentStyle.css'
 import UserPosts from './pages/userPosts/UserPosts'
-
+import Review from './components/clientsReview/Review'
 import home from './pages/Home1';
 import SingleRoom from './pages/SingleRoom'
 // import { LanguageContext } from './context/changeLanguage';
@@ -50,7 +50,7 @@ export default function App() {
 
       <NavBar />
       
-
+ 
       {/* <Maps /> */}
 
       <Switch>
@@ -63,6 +63,7 @@ export default function App() {
         <Route path={"/singleroom"} exact component={SingleRoom}></Route>
         {/* <Route path={"/userpost"} exact component={UserPosts}></Route> */}
         <Route path={"/chat"} exact component={Layout}></Route>
+        <Route path={"/review"}  component={Review}></Route>
 
         { userstate && (
         <Route path={"/updateProfile"} exact component={UpdateUser}></Route>
