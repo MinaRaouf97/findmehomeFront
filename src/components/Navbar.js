@@ -69,11 +69,21 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
+
+
               <li className="nav-item">
                 <Link className="nav-link" to="/home">
                   home 2 
                 </Link>
               </li>
+
+              <li className="nav-item">
+              <Link className="nav-link" to="/SingleRoom">
+                Single Room
+              </Link>
+            </li>
+
+
               <li className="nav-item">
                 <Link className="nav-link" to="/aboutus">
                   about us
@@ -81,6 +91,11 @@ const Navbar = () => {
               </li>
 
 
+              <li className="nav-item">
+              <Link className="nav-link" to="/UserInfo">
+              UserInfo
+              </Link>
+            </li>
 
               {!userstate ?
 

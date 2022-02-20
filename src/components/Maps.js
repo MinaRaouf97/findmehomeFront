@@ -8,7 +8,8 @@ function Map() {
     <div className="maps">
 
       <div className="gmap_canvas">
-      <h3>Location</h3>
+      <h3  style={{fontWeight:'bold'}}>Location</h3>
+
         <iframe 
         className="mapiframe"
           title={address}

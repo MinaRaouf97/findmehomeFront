@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { GiMoneyStack,GiFamilyHouse } from "react-icons/gi";
 import { IoIosPeople } from "react-icons/io";
 import Title from "./Title";
-import serv1 from "../resources/images/serv1.svg";
 
 
 
@@ -11,7 +10,6 @@ export default class Services extends Component {
     services: [
       {
         icon: <GiMoneyStack />,
-        // icon: serv1,
         title: "Save Money ",
         info: `You don't have to spend all your money on accomodation.
         Find someone and share the cost together.`

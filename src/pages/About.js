@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="about">
       <Hero>
-        <Banner title="FindMe Home" subtitle="prices Start From 800 LE" >
+        <Banner title="FindMe Home" subtitle="prices Start From 1000 LE" >
         </Banner>
       </Hero>
 
