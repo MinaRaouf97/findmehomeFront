@@ -38,7 +38,9 @@ const Review = () => {
           <span>/</span>reviews
         </h2>
       </div>
+
       <div className="section-centers">
+
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person;
 
