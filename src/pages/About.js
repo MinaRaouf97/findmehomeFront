@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
+import Contact from '../components/Contact'
+
 
 const About = () => {
   return (
@@ -12,6 +14,8 @@ const About = () => {
       </Hero>
 
       <Services />
+      <Contact />
+
 
     </div>
   );

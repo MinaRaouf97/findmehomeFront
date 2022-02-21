@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import PhotosSlider from "../components/singleroom/PhotosSlider";
 import Map from "../components/Maps";
 import PropertyDescription from "../components/singleroom/PropertyDescription";
-// import Reviews from "../components/Reviews";
+import Reviews from "../components/singleroom/Reviews";
 
 
 const SingleRoom = () => {
@@ -20,6 +20,7 @@ const SingleRoom = () => {
       </Hero>
       <PhotosSlider />
       <PropertyDescription/>
+      <Reviews/>
 
       <Map />
 

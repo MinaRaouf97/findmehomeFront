@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 import FeaturedRooms from "../components/FeaturedRooms";
 import ClientFeedback from "../components/ClientFeedback";
 import SearchHome from "../components/SearchHome";
-import Contact from '../components/Contact'
+// import Contact from '../components/Contact'
 
 const home = () => {
   return (
@@ -37,7 +37,6 @@ const home = () => {
 
       <FeaturedRooms />
       <ClientFeedback />
-      <Contact />
 
 
 

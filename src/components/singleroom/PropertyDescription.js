@@ -78,12 +78,13 @@ export default function PropertyDescription() {
 
                 <Col sm={6} xs={6} md={4}>
 
-                    <div className="descriptionCard " >
+                    <div className="descriptionCard border" style={{textAlign:'center'}} >
                         <img className="card-img-top" src="https://eclatsuperior.com/wp-content/uploads/2021/04/man3.jpg" alt="" />
                         <div className="card-body">
-                            <h5 className="card-title">Contact With Seller</h5>
-                            <p className="card-text"><FormControl as="textarea" /></p>
-                            <a href="#" className="btn btn-primary  " >Submit</a>
+                            <h3 className="card-title mb-4">Contact The Seller</h3>
+                            <a href="#" className="btn btn-dark"  >Request Tour</a>
+                            <br/>
+                            <a href="#" className="btn btn-outline-dark m-2" >Message</a>
                         </div>
                     </div>
 
@@ -101,6 +102,8 @@ export default function PropertyDescription() {
     );
 }
 
+
+// <p className="card-text"><FormControl as="textarea" /></p>
 
 
 

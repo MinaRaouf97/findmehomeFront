@@ -67,6 +67,7 @@
 }
 .banner h1 {
   font-size: 2.5rem;
+  color: white;
 }
 .banner div {
   width: 10rem;
@@ -151,9 +152,23 @@
 
 .descriptionCard{
   width: 15rem;
-  height: 20rem;
+  height: 23rem;
   margin: 10%;
-  text-align: 'center' 
+  text-align: 'center';
+  
+
+}
+
+.descriptionCard .card-body{
+  font-weight: 900;
+  padding: 6%;
+}
+
+.descriptionCard .btn{
+ color:var(--primaryColor);
+ width:9rem;
+ margin: 4%;
+ font-size: large;
 }
 
 
@@ -177,8 +192,12 @@
   width:fit-content;
 }
 
-.HomeSearch option, .HomeSearch select {
+.HomeSearch option, .HomeSearch select ,input{
   border-radius: 1rem;
+}
+
+.inputBox input{
+  width: 40%;
 }
 
 .HomeSearch form .inputBox {
@@ -408,7 +427,7 @@ Button.apt-btn:hover{
   }
   
   .myCarousel p {
-    font-weight: 100 !important;
+    /* font-weight: 100 !important; */
     line-height: 29px !important;
     color: #222;
     font-size: 15px;
@@ -420,9 +439,9 @@ Button.apt-btn:hover{
   .myCarousel p:after {
     content: "“";
     color: #aaa;
-    font-size: 26px;
+    /* font-size: 120%; */
     font-family: monospace;
-    font-weight: 100;
+    font-weight: 300;
   }
   
   
@@ -526,3 +545,62 @@ Button.apt-btn:hover{
 }
 
   /* End Of Footer */
+
+
+  /*Start Single Home Reviews */
+
+
+  .SingleRoomReview,.addReview{
+    padding-left: 9%;
+    width: 40%;
+    }
+    
+    .SingleRoomReview  h3{
+        font-weight: bolder;
+    }
+    
+    .SingleRoomReview  a{
+      font-weight: bolder;
+    }
+    
+    
+    .oneReview .comment{
+      border: 1px rgb(186, 187, 188) solid;
+      border-radius: 0.5rem;
+    }
+    
+    .oneReview .comment{
+      padding: 2%;
+    }
+    
+    
+    .oneReview .days{
+      text-align:end;
+      font-weight: 400;
+    }
+    
+    .oneReview .rounded-circle{
+      padding: 2% 1%;
+      width:18%;
+    }
+    
+    
+    .oneReview {
+      /* border: none; */
+      box-shadow: 1px 1px 1px 1px var(--primaryColor);
+      border-radius: 1.5rem;
+    }
+    
+    .oneReview input,.oneReview button{
+      padding: 2%;
+      margin: 3%;
+      
+    }
+    
+    .oneReview button{
+      width: 5rem;
+      font-weight: bold;
+    }
+    
+
+  /* End Of Single Reviews */

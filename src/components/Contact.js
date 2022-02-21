@@ -42,19 +42,22 @@ const Contact = () => {
       </Wrapper>
   )
 }
+
 const Wrapper = styled.section`
-  padding: 5rem 0;
-  margin: 3rem ;
+  padding: 1rem 0;
+  margin: 3.5rem ;
+
   h3 {
     text-transform: none;
   }
   p {
-    line-height: 2;
+    /* line-height: 2; */
     max-width: 45em;
     color: hsl(210, 22%, 49%);
   }
   .contact-form {
-    width: 90vw;
+    width: 50vw;
+    padding-left: 5%;
     max-width: 500px;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -97,7 +100,6 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      gap: 8rem;
       margin-top: 2rem;
     }
     p {

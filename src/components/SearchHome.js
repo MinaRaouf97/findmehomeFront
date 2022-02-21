@@ -14,6 +14,7 @@ export default function SearchHome() {
             <h4 className="container-fluid" > Advanced Search</h4>
 
 
+
             <select className="form-select" >
               <option value="" disabled hidden selected >Maximum price</option>
               <option value="5000">5000 LE</option>
@@ -50,13 +51,13 @@ export default function SearchHome() {
               <option value="playground">playground</option>
               <option value="security">security</option>
             </select>
+
+
+
           </div>
           <input type="submit" value="search" className="btn" />
         </form>
       </section>
-
-
-
 
 
     </>
@@ -64,6 +65,14 @@ export default function SearchHome() {
 }
 
 
+
+
+
+// <input placeholder="Maximum Price" />
+// <input placeholder="Property Type" />
+// <input placeholder="Bedrooms" />
+// <input placeholder="Bathrooms" />
+// <input placeholder="Features" />
 
 
 

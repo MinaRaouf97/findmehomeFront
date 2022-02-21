@@ -10,7 +10,7 @@ export default function FeaturedRooms () {
     return (
       <div className=" mt-5">
       
-        <Title title="featured rooms " />
+        <Title title="Explore Our Apartments" />
         <PropertyHomeCard/>
         
       </div>
