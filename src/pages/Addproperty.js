@@ -1,8 +1,7 @@
 import React from "react";
 import { Container ,Button,Col,Form,Row } from "react-bootstrap"; 
-import "./Login.css";
-import bg from "../../images/bg.jpeg";
-
+import "./login/Login.css";
+import bg from "../resources/images/defaultBcg.jpeg";
 
 function Addprop(){
 

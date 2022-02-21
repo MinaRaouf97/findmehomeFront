@@ -27,6 +27,8 @@ import Addprop from './pages/Addproperty';
 import PropInfo from './pages/PropInfo';
 import SingleRoom from './pages/SingleRoom'
 import About from './pages/About';
+import Review from './components/clientsReview/Review'
+
 // import { LanguageContext } from './context/changeLanguage';
 
 
@@ -53,6 +55,7 @@ export default function App() {
         <Route path={"/aboutus"} exact component={About}></Route>
         <Route path={"/propInfo"} exact component={PropInfo}></Route>
         <Route path={"/singleroom"} exact component={SingleRoom}></Route>
+        <Route path={"/review"} exact component={Review}></Route>
         <Route path={"/chat"} exact component={Layout}></Route>
 
 

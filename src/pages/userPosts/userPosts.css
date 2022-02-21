@@ -184,9 +184,11 @@
     text-align: center;
     margin-bottom: 2rem;
   }
+  
   .reviews:hover {
     box-shadow: var(--dark-shadow);
   }
+
   .img-container {
     position: relative;
     width: 150px;
