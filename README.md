@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  • Bootstrap (& React Bootstrap)
  • Axios
 
-# Instalaltion
+# Installation
  • Install the required dependencies
 ### `npm install`
  • Start the json server
