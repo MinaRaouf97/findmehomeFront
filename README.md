@@ -6,8 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 “Find Me Home” aims to ease the process of buying or renting properties by allowing users to display their owned ones.
 
-# Features
- •
 # Dependencies
  • React.js Framework
  • Bootstrap (& React Bootstrap)
@@ -22,11 +20,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `npm start`
 
 # Collaborators
+<pre>
  • Moataz Muhammad Al-Azzamy
  • Mina Raouf Aziz
  • Mohamed Abdelaal Ahmed
  • Khaled Naser ElMasry
  • Mohamed Osman Mostafa
  • Haidy Wagdy Awadallah
+</pre>
 
 
