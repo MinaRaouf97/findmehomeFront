@@ -11,7 +11,7 @@ code {
 }
 
 :root {
-  --primaryColor: #823afe;
+  --primaryColor: #5616c4;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -62,4 +62,9 @@ h6 {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 1.5em;
+}
+
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }

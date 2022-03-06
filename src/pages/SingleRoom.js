@@ -20,9 +20,10 @@ const SingleRoom = () => {
       </Hero>
       <PhotosSlider />
       <PropertyDescription/>
-      <Reviews/>
-
+     
       <Map />
+      <Reviews />
+
 
     </>
   );

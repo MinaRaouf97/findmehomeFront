@@ -1,0 +1,726 @@
+.maps {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  border-width: thick;
+  /* margin-left: 5rem; */
+  /* border-style: 3px black solid; */
+}
+
+.mapiframe {
+  border: 3px solid var(--primaryColor);
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.error {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+
+/* Hero */
+.defaultHero,
+.roomsHero {
+  min-height: calc(100vh - 66px);
+  background: url("../images/defaultBcg.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roomsHero {
+  background-image: url("../images/room-12.jpeg");
+  /* background-image: url("./resources/images/defaultBcg.jpeg"); */
+  min-height: 50vh;
+}
+
+/* End of Hero */
+/* Banner */
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.banner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .banner {
+    padding: 2rem 3rem;
+  }
+
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    padding: 2rem 6rem;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+  }
+}
+
+/* End of Banner */
+/* Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h4 {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.section-title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background: var(--primaryColor);
+}
+
+/* end of Title */
+
+/* services */
+.services {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.services-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-row-gap: 2rem;
+}
+
+.service span {
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.services p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+
+/*end of services */
+/* featured rooms */
+
+.section-title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background: var(--primaryColor);
+}
+
+.descriptionCard {
+  width: 15rem;
+  height: 23rem;
+  margin: 10%;
+  text-align: 'center';
+
+
+}
+
+.descriptionCard .card-body {
+  font-weight: 900;
+  padding: 6%;
+}
+
+.descriptionCard .btn {
+  color: var(--primaryColor);
+  width: 9rem;
+  margin: 4%;
+  font-size: large;
+}
+
+
+
+/* Homeeeeeeeeeeeeeeeeeeeeeeee */
+
+
+/*  Start Of SearchHome */
+
+.HomeSearch {
+  /* padding: 1% 9%; */
+  margin-left: 30% !important;
+}
+
+.inputBox .form-select {
+  padding-left: 40%;
+}
+
+.inputBox h4 {
+  color: var(--primaryColor);
+  margin-bottom: 0%;
+  font-weight: bolder;
+  font-size: 140%;
+  text-align: center;
+  width: fit-content;
+}
+
+.HomeSearch option,
+.HomeSearch select,
+input {
+  border-radius: 1rem;
+}
+
+.inputBox input {
+  width: 60%;
+}
+
+.HomeSearch div .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2%;
+  margin-top: 1%;
+}
+
+.HomeSearch div .inputBox input,
+.HomeSearch div .inputBox select {
+  flex: 1 1 25rem;
+  border: .1rem solid var(--primaryColor);
+  font-size: 110%;
+  padding: 2%;
+}
+
+.HomeSearch div .btn {
+  width: 70%;
+  margin: 2% 17%;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  color: white;
+  background: var(--primaryColor);
+  cursor: pointer;
+}
+
+
+.HomeSearch div {
+  background: rgb(220, 208, 208);
+  border-radius: 1rem;
+  width: 95%;
+  padding: 2%;
+}
+
+/*  End Of SearchHome */
+
+
+
+/*  Start Of Navbar */
+
+.navbar {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: var(--offWhite);
+  z-index: 1;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+
+.nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.show-nav {
+  height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+  }
+
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* End Of Navbar */
+
+
+
+
+/* Start Of PropertyHomeCard */
+
+.section-heading h2 {
+  text-align: center;
+  padding-bottom: 4%;
+  font-weight: 700;
+}
+
+.apartment {
+  margin: 2%;
+  margin-bottom: 20%;
+  color: #1b0349 !important;
+}
+
+.apartment .card-title {
+  background-color: #2b0371;
+  text-align: center;
+  padding: 5%;
+  font-size: 140%;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.apartment-footer {
+  position: relative;
+  padding: 0 20% 0 5%;
+}
+
+.apartment .card-body p span {
+  color: #823afe;
+  padding-right: 10px;
+}
+
+.apartment-footer h4 {
+  font-weight: 700;
+  font-size: 125%;
+}
+
+button.apt-btn {
+  background-color: #5616c4;
+  border: 1px soild #ffffff !important;
+  border-radius: 25px;
+  border-color: #ffffff !important;
+  padding: 3%;
+  color: #fff;
+  font-weight: 600;
+  margin: 4% 2% 2% 1%;
+}
+
+Button.apt-btn:hover {
+  padding: 2%;
+  background-color: #fff;
+  border: 1px soild #823afe;
+  color: #823afe;
+}
+
+/* End Of PropertyHomeCard */
+
+
+/*Start OF ClientFeedback  */
+.carousel-root {
+  /* width: 64% !important; */
+  margin: auto !important;
+  margin-top: 3% !important;
+  padding-bottom: 5%;
+}
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.carousel .slide {
+  background: #fff !important;
+  color: black;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 139px !important;
+  border-radius: 50%;
+}
+
+.myCarousel {
+  background: #fafafa;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+  height: 286px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 20% !important;
+}
+
+.myCarousel h3 {
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #787878;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  /* font-weight: 100 !important; */
+  line-height: 29px !important;
+  color: #222;
+  font-size: 15px;
+  font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before,
+.myCarousel p:after {
+  content: "“";
+  color: #aaa;
+  /* font-size: 120%; */
+  font-family: monospace;
+  font-weight: 300;
+}
+
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #4f249f !important;
+  /* outline: 2; */
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #ff5a3c !important;
+  height: 50px !important;
+  position: absolute;
+  top: 35% !important;
+}
+
+.App {
+  text-align: center;
+}
+
+@media only screen and (max-width: 934px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+
+  .myCarousel {
+    background: #ffffff;
+    margin-top: -8%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid rgb(235, 230, 230);
+    height: 269px;
+  }
+
+  .carousel .slide img {
+    width: 20% !important;
+    border-radius: 50%;
+  }
+}
+
+/*END OF ClientFeedback  */
+
+
+
+/* Start Of Footer */
+
+.footer {
+  background: url('../images/footer-img.jpg');
+  background-color: #561cbacb;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px 0;
+}
+
+.widget-heading h4 {
+  color: var(--primaryColor);
+  font-weight: 600;
+  margin-bottom: 3px;
+  left: 1%;
+
+}
+
+.footer .about p {
+  color: #fff;
+}
+
+.address ul li {
+  list-style: none;
+  color: #fff;
+  padding-bottom: 5%;
+}
+
+.address ul,
+.quick-links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.address ul li span {
+  color: var(--primaryColor);
+}
+
+.quick-links ul li {
+  list-style: none;
+  padding-bottom: 5%;
+}
+
+.quick-links ul li a {
+  color: #fff;
+  transition: all 1s ease;
+  text-decoration: none;
+
+}
+
+.quick-links ul li a:hover {
+  color: #e4b828;
+  text-decoration: none;
+}
+
+/* End Of Footer */
+
+
+/*Start Single Home Reviews */
+
+
+.SingleRoomReview,
+.addReview {
+  padding-left: 9%;
+  width: 40%;
+}
+
+.SingleRoomReview h3 {
+  font-weight: bolder;
+}
+
+.SingleRoomReview a {
+  font-weight: bolder;
+}
+
+
+.oneReview .comment {
+  border: 1px rgb(186, 187, 188) solid;
+  border-radius: 0.5rem;
+}
+
+.oneReview .comment {
+  padding: 2%;
+}
+
+
+.oneReview .days {
+  text-align: end;
+  font-weight: 400;
+}
+
+.oneReview .rounded-circle {
+  padding: 2% 1%;
+  width: 18%;
+}
+
+
+.oneReview {
+  /* border: none; */
+  box-shadow: 1px 1px 1px 1px var(--primaryColor);
+  border-radius: 1.5rem;
+}
+
+.oneReview input,
+.oneReview button {
+  padding: 2%;
+  margin: 3%;
+
+}
+
+.oneReview button {
+  width: 5rem;
+  font-weight: bold;
+}
+
+
+/* End Of Single Reviews */
+
+
+
+/* End Of Single SearchHomeCheckBox */
+
+.SearchHomeCheckBoxparent{
+  margin-left: 2rem;
+  margin-top: 4rem;
+  border: .1rem solid var(--primaryColor);
+  border-radius: 2rem;
+  background: rgb(214, 209, 226);
+  width: 100%;
+}
+
+.SearchHomeCheckBox {
+  padding: 5%;
+}
+
+.SearchHomeCheckBox h4 {
+  color: var(--primaryColor);
+  margin-bottom: 0%;
+  font-weight: bolder;
+  font-size: 170%;
+  width: fit-content;
+  padding: 3%;
+  text-align: center;
+
+}
+
+.SearchHomeCheckBox h5 {
+  font-size: 150%;
+  margin: 5%;
+  color: #421596;
+}
+
+.SearchHomeCheckBox label {
+  font-size: 120%;
+  font-weight: 700;
+  margin:0% 5% 0% 1.5%;
+  color: #1d1923;
+  margin-left: 2%;
+}
+
+
+
+.SearchHomeCheckBox .btn {
+  width: 70%;
+  margin: 2% 17%;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  color: white;
+  background: var(--primaryColor);
+  cursor: pointer;
+}
+
+
+/* End Of Single SearchHomeCheckBox */
+
+
+
+.person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}

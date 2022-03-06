@@ -30,7 +30,7 @@ export default class Services extends Component {
   };
   render() {
     return (
-      <section className="services">
+      <section className="services bg-light">
         <Title title="Why FindMe Home !" />
         <div className="services-center">
           {this.state.services.map(item => {

@@ -1,14 +1,45 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { FaAlignRight } from 'react-icons/fa'
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from '../store/actions/userActions';
+import { useHistory } from "react-router-dom";
+const socketUrl = "http://localhost:3231"
 
 
-export default class Navbar extends Component {
-    state = { isOpen: false };
-    handleToggle = () => {
-        this.setState({ isOpen: !this.state.isOpen });
+const Navbar =()=> {
+    const[socket,setSocket] =useState({
+      socket:null,
+      user:null,
+    })
+    const [isOpen, setState] = useState(false)
+
+
+    const handleToggle = () => {
+       setState({ isOpen: !isOpen });
     };
-    render() {
+
+    const history = useHistory()
+    const userstate = useSelector((state) => state.userLoginState.isLogedIn);
+    const dispatch = useDispatch();
+  
+    console.log(userstate)
+    const logOut = () => {
+  
+      localStorage.removeItem("user-info")
+      localStorage.setItem('islogedIn', false)
+      dispatch(logoutUser())
+     
+      history.push('/')
+  
+    }
+
+  
+    useEffect(() => {
+  
+  
+    }, [userstate])
+  
         return (
             <nav className="navbar">
                 <div className="nav-center">
@@ -19,20 +50,101 @@ export default class Navbar extends Component {
                         <button
                             type="button"
                             className="nav-btn"
-                            onClick={this.handleToggle} >
+                            onClick={()=>handleToggle} >
                             <FaAlignRight className="nav-icon" />
                         </button>
                     </div>
-                    <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"} >
-                        <li> <Link to="/"> Home </Link>  </li>
-                        <li> <Link to="/room"> Rooms </Link>  </li>
-                        <li> <Link to="/profile"> Profile </Link>  </li>
-                        <li> <Link to="/about">About </Link>  </li> 
-                        <li> <Link to="/profile"></Link>  </li> 
-                        <li> <Link to="/profile"> Logout </Link>  </li>
+                    <ul className={ isOpen ? "nav-links show-nav" : "nav-links"} >
+                 
+              <li className="nav-item">
+                <Link className="nav-link" to="/">
+                    Home
+                </Link>
+              </li>
+
+
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/aboutus">
+                  about us
+                </Link>
+              </li>
+
+
+
+              {!userstate ?
+
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">
+                    Login
+                  </Link>
+                </li>
+
+                : null}
+
+
+              {userstate ?
+
+                <li className="nav-item">
+                  <Link className="nav-link " to="/userposts">
+                    User Info
+                  </Link>
+                </li>
+                : null}
+
+
+
+
+              {!userstate ?
+                <li className="nav-item">
+                  <Link className="nav-link " to="/register">
+                    Register
+                  </Link>
+                </li>
+                : null}
+
+
+
+
+              {userstate ?
+                <li className="nav-item">
+                  <Link className="nav-link" to="/addprop" >
+                    add new prop
+                  </Link>
+                </li>
+                : null
+              }
+
+                {userstate ?
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/chat">
+                      Public Rooms
+                      </Link>
+                  </li>
+              : null }
+
+
+
+
+
+              {userstate ?
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login" onClick={logOut}>
+                    Log out
+                  </Link>
+                </li>
+                : null
+              }
+
+
+
+
                     </ul>
                 </div>
             </nav>
         );
-    }
+   
 }
+
+
+export default Navbar

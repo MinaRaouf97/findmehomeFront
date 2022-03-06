@@ -10,80 +10,79 @@ const Contact = () => {
     if (state.succeeded) {
         return (
             <div className='d-flex justify-content-center'>
-            <h3>Thanks for joining!</h3>
+            <h3>Thanks for joining our newsletter !</h3>
             </div>
         )
         
     }
   return (
 
-  <Wrapper>
-          <div className='section-center'>
-              <h2>Join our newsletter and get 25% off</h2>
-              <div className='content'>
+  <Wrapperz className='bg-light'>
+          <div className='section-centerz'>
+              <h2>Join our Newsletter and get 10% off</h2>
+              <div className='contentz'>
                   <p>
-                  Do you love real estate? Want to constantly stay inspired and be surrounded by millions of like-minded investors? Then Subscribe today and get rewarded for your love of real estate and invest your money with us.
+                  Do you want to get updates about the new properties? Want to constantly stay updated with the last news in the market? Then Subscribe today and get rewarded for your love of real estate.
                   </p>
-                  <form onSubmit={handleSubmit} className='contact-form'>
+                  <form onSubmit={handleSubmit} className='contact-formz'>
                   
-                      <input type='email' id='email' className='form-input' name='email' placeholder='Enter your Email' required/>
+                      <input type='email' id='email' className='form-inputz' name='email' placeholder='Enter your Email' required/>
                             <ValidationError 
                 prefix="Email" 
                 field="email"
                 errors={state.errors}
             />
                       
-                      <button type='submit' className='submit-btn' disabled={state.submitting} >
+                      <button type='submit' className='submit-btnz' disabled={state.submitting} >
                         Subscribe
                       </button>
                   </form>
               </div>
           </div>
-      </Wrapper>
+      </Wrapperz>
   )
 }
 
-const Wrapper = styled.section`
-  padding: 1rem 0;
-  margin: 3.5rem ;
+const Wrapperz = styled.section`
+  padding: 2rem 0;
 
   h3 {
     text-transform: none;
   }
   p {
-    /* line-height: 2; */
+    line-height: 2;
     max-width: 45em;
     color: hsl(210, 22%, 49%);
   }
-  .contact-form {
+  .contact-formz {
     width: 50vw;
-    padding-left: 5%;
+    /* padding-left: 2rem; */
     max-width: 500px;
     display: grid;
     grid-template-columns: 1fr auto;
   }
 
-  .form-input,
-  .submit-btn {
+  .form-inputz,
+  .submit-btnz {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border: 2px solid #222;
   }
-  .form-input {
+  .form-inputz {
     border-right: none;
     color: hsl(209, 34%, 30%);
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
   }
-  .submit-btn {
+  .submit-btnz {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
   }
-  .form-input::placeholder {
+  .form-inputz::placeholder {
     color: #222;
     text-transform: capitalize;
   }
-  .submit-btn {
+  .submit-btnz {
     background: #823afe;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
@@ -91,12 +90,12 @@ const Wrapper = styled.section`
     transition: all 0.3s linear;
     color: #fff;
   }
-  .submit-btn:hover {
+  .submit-btnz:hover {
     color: #222;
     background: #B667F1;
   }
   @media (min-width: 992px) {
-    .content {
+    .contentz {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -109,6 +108,22 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
+
+
+.section-centerz {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section-centerz {
+    width: 95vw;
+  }
+}
+.text-center {
+  text-align: center;
+}
 `
 
 export default Contact

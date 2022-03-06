@@ -27,6 +27,8 @@
     "react-router": "^6.2.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "^3.0.1",
+    "react-scroll": "^1.8.5",
+    "react-toastify": "^8.2.0",
     "react16": "npm:react@^16.14.0",
     "reacticonsold": "npm:react-icons@^2.2.5",
     "redux": "^4.1.2",

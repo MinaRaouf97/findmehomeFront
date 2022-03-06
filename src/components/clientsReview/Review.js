@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import './clients.css'
+import Title from "../Title";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faQuoteRight , faChevronLeft , faChevronRight, } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -35,12 +36,10 @@ const Review = () => {
     <section className="sections">
       <div className="titles">
         <h2>
-          <span>/</span>reviews
+        <Title title="Clients Feedback" />
         </h2>
       </div>
-
-      <div className="section-centers">
-
+      <div className="section-centerw">
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person;
 

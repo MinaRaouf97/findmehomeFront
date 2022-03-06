@@ -1,5 +1,11 @@
-import React from 'react'
-import { Carousel } from 'react-carousel-minimal'
+import React, { useState, useEffect } from "react";
+// import { Carousel } from 'react-carousel-minimal'
+import axios from "axios";
+import { useParams } from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel'
+
+
+
 
 export default function PhotosSlider() {
     const data = [
@@ -22,6 +28,13 @@ export default function PhotosSlider() {
 
     ];
 
+
+    const params = useParams()
+    const [retrivedImgs, setRetrivedImgs] = useState(data)
+
+    console.log(params.singleroom)
+
+
     const captionStyle = {
         fontSize: '2em',
         fontWeight: 'bold',
@@ -30,44 +43,95 @@ export default function PhotosSlider() {
         fontSize: '15px',
         fontWeight: 'bold',
     }
+
+    useEffect(() => {
+        const imagepath = "";
+        const headers = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        axios.get(`http://127.0.0.1:8000/api/getimages/${params.singleroom}`, { headers: headers })
+
+            .then((res) => {
+                let arr = []
+                let curr = ""
+                for (let i = 0; i < res.data.length; i++) {
+                    curr = res.data[i]
+                    arr.push({ image: `http://127.0.0.1:8000${curr['img']}` })
+
+
+
+                }
+                setRetrivedImgs(arr)
+                console.log(arr)
+
+                //   const imagepath = firstImage['img']
+                //   setRetrivedImgs(imagepath)
+
+
+            })
+            .catch((err) => console.log(err))
+
+
+
+    }, [])
+    console.log(data)
+    console.log(retrivedImgs)
+
     return (
         <div className="Container PhotosSlider">
-            <div style={{ textAlign: "center"  }}>
+            <div style={{ textAlign: "center" }}>
                 {/* <h2>Title</h2> */}
                 <div style={{ padding: "0 20px" }}>
-                    <Carousel
-                        data={data}
-                        time={1500}
+
+                    <Carousel variant="dark" className="my-5">
+                        {retrivedImgs.map((image,index) => {
+
+
+                            return (
+                                <Carousel.Item key={index}>
+                                    <img
+                                        className="d-block w-100"
+                                        src={image['image']}
+                                        alt="First slide"
+                                    />
+                                </Carousel.Item>
+                            )
+                        })}
+
+                    </Carousel>
+                    {/* <Carousel
+                      
+                        data={retrivedImgs}
+                        
+                   
+                        automatic={false}
                         width="1500px"
                         height="500px"
-                        captionStyle={captionStyle}
                         radius="15px"
                         slideNumber={true}
                         slideNumberStyle={slideNumberStyle}
-                        captionPosition="bottom"
-                        automatic={true}
                         dots={true}
-                        interval={8000}
                         pauseIconColor="white"
                         pauseIconSize="40px"
-                        slideBackgroundColor="white"
+                        slideBackgroundColor="darkgrey"
                         slideImageFit="cover"
                         thumbnails={true}
                         thumbnailWidth="100px"
                         style={{
-                            display:"center",
+                            display: "center",
                             textAlign: "center",
                             maxWidth: "1000px",
                             maxHeight: "500px",
                             margin: "30px auto",
 
                         }}
-                    />
+                    /> */}
                 </div>
             </div>
-            <br/><br/><br/>
+            <br /><br /><br />
         </div>
-        
+
     );
 }
 
