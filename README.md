@@ -7,9 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 “Find Me Home” aims to ease the process of buying or renting properties by allowing users to display their owned ones.
 
 # Dependencies
+<pre>
  • React.js Framework
  • Bootstrap (& React Bootstrap)
  • Axios
+ • Socket.IO
+</pre>
 
 # Installation
  • Install the required dependencies
